@@ -137,7 +137,7 @@ class NoblesseScrapper {
 
     for (final index in Iterable<int>.generate(pageCount, (i) => i + 1)) {
       final url =
-        "$downloadUrl${_zeroPad(chapterNo, 4)}-${index.toString().padLeft(3, '0')}.png";
+        '$downloadUrl${_zeroPad(chapterNo, 4)}-${_zeroPad(index, 3)}.png';
       final imgFileName =
         '$outputDirectory/$_chapterFileName/${_chapterFileName}_$index.png';
       futures.add(_downloadImage(url, imgFileName));
