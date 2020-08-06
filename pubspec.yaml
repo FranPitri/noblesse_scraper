@@ -1,0 +1,15 @@
+name: noblesse_scraper
+description: A simple command-line application to scrape Noblesse chapters.
+version: 1.0.0
+homepage: https://www.github.com/FranPitri/noblesse_scraper
+
+environment:
+  sdk: '>=2.8.1 <3.0.0'
+
+dev_dependencies:
+  pedantic: ^1.9.0
+
+dependencies:
+  web_scraper: ^0.0.6
+  args: ^1.6.0
+  archive: ^2.0.13
